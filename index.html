@@ -1,10 +1,40 @@
 <html>
-<head>
-<Title>calculate</title>
 
+  <head><title> calculator </title>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-<script type="text/javascript">
-  function myFunction() {
+input[type=submit] {
+  width: 100%;
+  background-color: #C0C0C0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45ab78;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<script>
+    function myFunction() {
 
    var y = document.getElementById("num1").value;
     var z = document.getElementById("num2").value; 
@@ -14,20 +44,23 @@
 
   }
 </script>
-  </head>
-  <body bgcolor = "C0C0C6">
-  	<H1>Calculate How  Many self-adhesive brick slip you will need</h1>
-    <h3>Width in Meters</h6>
-	
-	 <input type="number" name="num1" id ="num1"/>
-    <h3>Height in Meters</h6>
-	
-	<input type="number" name="num2" id = "num2"/>
-	<button type="button" onclick="myFunction()">calculate</button>
-	<h3>Number of plates required :</h3>
-	
- 
-   	<input type="text" id = "product" name="product" >
-   	
-  </body>
-<html>
+<body bgcolor="#C0C0C0">
+
+<H1>Calculate How  Many self-adhesive brick slip you will need</h1>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">Width in Meters : </label>
+   <input type="number" name="num1" id ="num1"/>
+
+    <label for="lname">Height  in Meters</label>
+   <input type="number" name="num2" id = "num2"/>
+
+    <button type="button" onclick="myFunction()">calculate</button>
+    <h3>Number of plates required :</h3>
+    <input type="text" id = "product" name="product" >
+  </form>
+</div>
+
+</body>
+</html>
