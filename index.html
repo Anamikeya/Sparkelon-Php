@@ -1,0 +1,33 @@
+<html>
+<head>
+<Title>calculate</title>
+
+
+<script type="text/javascript">
+  function myFunction() {
+
+   var y = document.getElementById("num1").value;
+    var z = document.getElementById("num2").value; 
+    var x = (y * z * 10000)/900;
+    document.getElementById("product").value = Math.round(x);
+    return x;
+
+  }
+</script>
+  </head>
+  <body bgcolor = "C0C0C6">
+  	<H1>Calculate How  Many self-adhesive brick slip you will need</h1>
+    <h3>Width in Meters</h6>
+	
+	 <input type="number" name="num1" id ="num1"/>
+    <h3>Height in Meters</h6>
+	
+	<input type="number" name="num2" id = "num2"/>
+	<button type="button" onclick="myFunction()">calculate</button>
+	<h3>Number of plates required :</h3>
+	
+ 
+   	<input type="text" id = "product" name="product" >
+   	
+  </body>
+<html>
